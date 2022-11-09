@@ -11,8 +11,8 @@
     ],
     "scripts": {
         "build": "rimraf ./build && tsc",
+        "start": "node build/index.js",
         "start:dev": "nodemon",
-        "start": "npm run build && node build/index.js",
         "lint": "eslint . --ext .ts",
         "prettier-format": "run-script-os",
         "prettier-format:win32": "prettier --config .prettierrc \"./src/**/*.ts\" --write",
