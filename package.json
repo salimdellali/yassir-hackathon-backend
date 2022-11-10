@@ -10,7 +10,9 @@
         "hackathon"
     ],
     "scripts": {
-        "build": "rimraf ./build && tsc",
+        "start:onrender": "node build/index.js",
+        "build:onrender": "rimraf ./build && tsc",
+        "build": "tsc",
         "start": "node build/index.js",
         "postinstall": "tsc",
         "start:dev": "nodemon",
