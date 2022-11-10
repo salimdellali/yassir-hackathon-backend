@@ -1,6 +1,13 @@
 import express from 'express'
+import { ClientRouter } from './modules/client/'
+
 const app = express()
 const PORT = process.env.PORT || 3000
+const API_VERSION = '/api/v1'
+
+app.use(express.json())
+
+app.use(API_VERSION + '/client', ClientRouter)
 
 app.get('/ping', (req, res) => {
     res.send('pong')
