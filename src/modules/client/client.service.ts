@@ -25,7 +25,10 @@ export default class ClientService {
                 decription:
                     'I have a stack of 3 sweaters and 2 pants that needs to be ironed',
                 address: "2 Rue Larbi Ben M'hidi, Alger Centre, Alger",
-                postedAt: '2022-10-11T07:00:00.000Z',
+                postedAt: {
+                    date: '2022/10/11',
+                    time: '07:00',
+                },
                 isProfessionalRequested: false,
                 jobStatus: 'accepted',
             },
@@ -35,7 +38,10 @@ export default class ClientService {
                 subCategory: 'Car washing',
                 decription: 'I have a car to wash, inside and outside',
                 address: "2 Rue Larbi Ben M'hidi, Alger Centre, Alger",
-                postedAt: '2022-10-10T08:30:00.000Z',
+                postedAt: {
+                    date: '2022/10/10',
+                    time: '08:30',
+                },
                 isProfessionalRequested: true,
                 jobStatus: 'canceled',
             },
@@ -45,7 +51,10 @@ export default class ClientService {
                 subCategory: 'Carpet & sofa cleaning',
                 decription: 'I have a 10 windows to be washed',
                 address: 'Cité 1 Mai, Blida, Blida',
-                postedAt: '2022-10-09T18:30:00.000Z',
+                postedAt: {
+                    date: '2022/10/09',
+                    time: '18:30',
+                },
                 isProfessionalRequested: false,
                 jobStatus: 'completed',
             },
@@ -55,7 +64,10 @@ export default class ClientService {
                 subCategory: 'Home Cleaning',
                 decription: 'I have 1 floor that need to be cleaned',
                 address: 'Cité 1 Mai, Blida, Blida',
-                postedAt: '2022-10-10T18:30:00.000Z',
+                postedAt: {
+                    date: '2022/10/11',
+                    time: '18:30',
+                },
                 isProfessionalRequested: false,
                 jobStatus: 'open',
             },
@@ -81,13 +93,19 @@ export default class ClientService {
                     decription:
                         'I have a stack of 3 sweaters and 2 pants that needs to be ironed',
                     address: "2 Rue Larbi Ben M'hidi, Alger Centre, Alger",
-                    postedAt: '2022-10-11T07:00:00.000Z',
+                    postedAt: {
+                        date: '2022/10/11',
+                        time: '07:00',
+                    },
                     isProfessionalRequested: false,
                     jobStatus: 'accepted',
                 },
                 jobberOffer: [
                     {
+                        _id: 'jo_1',
                         proposedPrice: 3000,
+                        message:
+                            'I have an expertise of 10 years in ironing, quality garanteed',
                         jobber: {
                             _id: 'j_1',
                             fullName: 'John Doe',

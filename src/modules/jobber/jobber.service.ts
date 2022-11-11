@@ -13,6 +13,50 @@ export default class JobberService {
             rating: 5,
             reviews: 123,
             jobsDone: 320,
+            comments: [
+                {
+                    _id: 'cm_1',
+                    rating: 5,
+                    postedAt: {
+                        date: '2022/10/06',
+                        time: '19:00',
+                    },
+                    message: 'does clean work, definetly worth recommending',
+                    client: {
+                        c_id: 'c_2',
+                        fullName: 'Herbert Ramirez',
+                        profilePicture:
+                            'https://randomuser.me/api/portraits/men/85.jpg',
+                        phone: '+213681000081',
+                        email: 'herbert@gmail.com',
+                        adresses: [
+                            'Rue de la gare, Boumerdes, Boumerdes',
+                            'Rue de la Méditerranée, Tipaza, Tipaza',
+                        ],
+                        requests: [],
+                    },
+                },
+                {
+                    _id: 'cm_2',
+                    rating: 4,
+                    postedAt: {
+                        date: '2022/10/05',
+                        time: '10:00',
+                    },
+                    message:
+                        'overall work is done good, some minor improvements needed',
+                    client: {
+                        c_id: 'c_3',
+                        fullName: 'Kylie Mendoza',
+                        profilePicture:
+                            'https://randomuser.me/api/portraits/women/12.jpg',
+                        phone: '+213653303030',
+                        email: 'kylie@gmail.com',
+                        adresses: ["Rue de l'université, Bab Ezzouar, Alger"],
+                        requests: ['cr_5'],
+                    },
+                },
+            ],
         }
 
         return JOBBER
@@ -26,7 +70,10 @@ export default class JobberService {
                 subCategory: 'Ironing',
                 decription: 'I have 5 napkins to be ironed',
                 address: "Rue de l'université, Bab Ezzouar, Alger",
-                postedAt: '2022-10-11T15:00:00.000Z',
+                postedAt: {
+                    date: '2022/10/11',
+                    time: '15:00',
+                },
                 isProfessionalRequested: false,
                 jobStatus: 'open',
             },
@@ -46,13 +93,19 @@ export default class JobberService {
                     decription:
                         'I have a stack of 3 sweaters and 2 pants that needs to be ironed',
                     address: "2 Rue Larbi Ben M'hidi, Alger Centre, Alger",
-                    postedAt: '2022-10-11T07:00:00.000Z',
+                    postedAt: {
+                        date: '2022/10/11',
+                        time: '07:00',
+                    },
                     isProfessionalRequested: false,
                     jobStatus: 'accepted',
                 },
                 jobberOffer: [
                     {
+                        _id: 'jo_1',
                         proposedPrice: 3000,
+                        message:
+                            'I have an expertise of 10 years in ironing, quality garanteed',
                         jobber: {
                             _id: 'j_1',
                             fullName: 'John Doe',
