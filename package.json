@@ -1,7 +1,7 @@
 {
     "name": "yassir-hackathon-backend",
     "version": "1.0.0",
-    "description": "",
+    "description": "YASSIR Home Services, A platform in which users easily find reliable service providers to meet their needs",
     "author": "salim dellali",
     "license": "Apache-2.0",
     "main": "index.js",
